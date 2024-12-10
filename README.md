@@ -2,7 +2,9 @@
 
 # CRUD API Documentation by Dr.Chanakarn Kingkaew (Aj.Oak)
 
-นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน โปรดศึกษาวิธีการทำ API Documentation
+นี่คือ API แบบ CRUD (Create, Read, Update, Delete) อย่างง่ายที่พัฒนาด้วย Node.js และ Express โดย API นี้ใช้โครงสร้างข้อมูลในหน่วยความจำ (in-memory data structure) เพื่อจัดเก็บรายการ และแสดงให้เห็นหลักการพื้นฐานของ RESTful อย่างชัดเจน โปรดศึกษาวิธีการทำ API Documentation  
+
+ใช้ไฟล์ server.js ในการทดสอบ API ผ่าน Postman
 
 ---
 
