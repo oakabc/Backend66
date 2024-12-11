@@ -50,8 +50,8 @@
 <body>
    <div class="search-container">
        <h2>สภาพอากาศของจังหวัดคุณ</h2>
-       <form>
-           <input type="text" placeholder="โปรดใส่ชื่อจังหวัดของคุณ..." required>
+       <form method = 'post' action = '/anyWeather'>
+           <input type="text" name = "province" placeholder="โปรดใส่ชื่อจังหวัดของคุณ..." required>
            <button type="submit">ดูสภาพอากาศ</button>
        </form>
    </div>
