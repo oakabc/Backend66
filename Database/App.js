@@ -15,6 +15,10 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
+app.get("/", (req,res)=> {
+  res.sendFile(__dirname+"/register.html")
+})
+
 app.post('/students', async (req, res) => {
   const { first_name, last_name, email, password } = req.body;
 

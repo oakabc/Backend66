@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
         if (err) throw err;
 
         // Render the EJS template with products data
+        console.log(JSON.stringify(results))
         res.render('product_page', { products: results });
     });
 });
