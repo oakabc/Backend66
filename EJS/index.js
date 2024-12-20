@@ -12,7 +12,7 @@ app.get("/", (req,res)=>{
 
 app.post("/submit", (req,res) => {
     const name = req.body["name"]
-    res.sendFile(__dirname+"/index.html")
+    res.render("index.ejs", {name: req.body["name"]})
 })
 
 app.listen(3000, () => {

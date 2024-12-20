@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-item h2 {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #333;
+        }
+        .product-item p {
+            margin: 10px 20px;
+            color: #555;
+        }
+        .product-item .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Catalog</h1>
+    <div class="product-list">
+        <% products.forEach(product => { %>
+            <div class="product-item">
+                <a href="/product/<%= product.id %>">
+                    <img src="<%= product.img_url %>" alt="<%= product.name %>">
+                </a>
+                <h2><%= product.name %></h2>
+                <p><%= product.description %></p>
+                <p>Category: <strong><%= product.category %></strong></p>
+                <p class="price">$<%= product.price %></p>
+                <a href="/product/<%= product.id %>" style="text-decoration: none; color: white; background-color: #007bff; padding: 10px 15px; border-radius: 5px; display: inline-block; margin-top: 10px;">View Details</a>
+            </div>
+        <% }) %>
+    </div>    
+</body>
+</html>
